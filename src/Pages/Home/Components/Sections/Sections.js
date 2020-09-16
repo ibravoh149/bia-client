@@ -32,7 +32,7 @@ const Sections = () => {
           heading="A sentence that sums up what the programs are about."
           paragraph="It has been placed here solely to demonstrate the look and feel of finished, typeset text. Only for show. He who searches for meaning here will be sorely disappointed."
           buttonText="SEE OUR PROGRAMS"
-          containerClass="ml-20"
+          // containerClass="ml-20"
         />
       </SectionContainer>
 
@@ -41,7 +41,7 @@ const Sections = () => {
           heading="A sentence that sums up what the programs are about."
           paragraph="It has been placed here solely to demonstrate the look and feel of finished, typeset text. Only for show. He who searches for meaning here will be sorely disappointed."
           buttonText="JOIN US"
-          containerClass="mr-20"
+          // containerClass="mr-20"
         />
         <ImageContent image={image2} />
       </SectionContainer>
@@ -52,7 +52,7 @@ const Sections = () => {
           heading="A sentence that sums up what the programs are about."
           paragraph="It has been placed here solely to demonstrate the look and feel of finished, typeset text. Only for show. He who searches for meaning here will be sorely disappointed."
           buttonText="LEARN MORE"
-          containerClass="ml-20"
+          // containerClass="ml-20"
         />
       </SectionContainer>
     </React.Fragment>

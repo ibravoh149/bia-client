@@ -16,15 +16,6 @@ const BannerIntro = () => {
           finished, typeset text and its only for show so she who searches for
           meaning here will be sorely disappointed.
         </p>
-        {/* <Row>
-          <Col md={6}>
-            <Button color="blue">BECOME A MEMBER</Button>
-          </Col>
-
-          <Col md={6}>
-            <Button>PARTNER WITH US</Button>
-          </Col>
-        </Row> */}
         <div className="banner-intro-container__intro--btn-contaier">
           <button className="intro-btn btn1">BECOME A MEMBER</button>
           <button className="intro-btn btn2">PARTNER WITH US</button>
