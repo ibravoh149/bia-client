@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "IBM Plex Serif";
+  src: local("IBM Plex Serif"),
+    url(../fonts/IBMPlexSerif-Regular.ttf) format("truetype");
+}
+
+// *, *::after, *::before{
+//   padding: 0%;
+//   margin: 0%;
+//   box-sizing: inherit
+// }
+
+body {
+  box-sizing: border-box;
+}
+
+/* Font Smoothing */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+td,
+button,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.navbar,
+.brand,
+.alert {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: IBM Plex Serif;
+  font-weight: $font-weight-normal;
+}
+
+html > body > div#root > div {
+  // background-color: var(--body-background);
+  height: max-content !important;
+}
