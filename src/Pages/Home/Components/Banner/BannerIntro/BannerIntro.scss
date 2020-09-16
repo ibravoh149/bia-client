@@ -101,6 +101,14 @@
   line-height: 21px;
   letter-spacing: 0.05em;
   color: white;
+  box-shadow: none;
+  &:focus{
+    outline: none;
+
+  }
+  &:active{
+    outline: none;
+  }
   &:hover{
     filter: brightness(120%);
   }
