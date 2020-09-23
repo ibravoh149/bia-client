@@ -45,8 +45,20 @@
         font-size: 14px;
         line-height: 21px;
         letter-spacing: 0.05em;
+        // padding: 5px 10px;
         color: #1F2421;
         cursor: pointer;
+        // &:hover{
+        //   &:not(:last-child){
+        //     background: rgba(0, 114, 153, 0.7);
+        //     border-radius: 4px;
+        //     transition: transform .2s ease-in-out;
+        //     color: white;
+        //     // opacity: .5;
+        //     // filter: brightness(120%);
+        //   }
+        //   // padding: 3px ;
+        // }
         
       }
       .nav-list-donate-btn{

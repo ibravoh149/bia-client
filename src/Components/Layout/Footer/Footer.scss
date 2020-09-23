@@ -56,6 +56,12 @@
       &:not(:first-child){
         margin-top: 20px;
       }
+      // &:hover{
+      //   background-color: rgba(0,0,0, 0.8);
+      //   width: max-content;
+      //   // padding: 2px 5px;
+      //   border-radius: 4px;
+      // }
   }
 }
 .footer-form-container{
@@ -79,5 +85,12 @@
 .foot-btn{
   @media only screen and(max-width:809px){
    font-size: 10px;
+  }
+}
+
+.contact-link{
+  color: rgba(255, 255, 255, 0.8);
+  &:hover{
+    color: rgba(255, 255, 255, 0.8);
   }
 }

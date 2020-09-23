@@ -32,7 +32,7 @@ const TestimonialItem = (props) => {
 
   return (
     <div className="testimonial-container">
-      <div className="user-image border-color-white testimonial-image">
+      <div className="border-color-white testimonial-image">
         <img src={image} alt="user profile" />
       </div>
       <div className="testimonial-container__content-right">

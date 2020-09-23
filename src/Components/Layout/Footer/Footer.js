@@ -20,17 +20,25 @@ const Footer = () => {
       <section className="footer-container__top">
         <FooterColumn title="BLACK IN AI">
           <p className="footer-p">
-            Short sentence stating the nature of the organization e.g.
-            tax-exempt, non-profit and possibly registration number.
+            Increasing the presence of black people in the field of artificial
+            intelligence.
           </p>
           <button className="intro-btn btn3">DONATE</button>
         </FooterColumn>
 
         <FooterColumn title="CONTACT US">
+          <p className="footer-p">555 Bryant St #708, Palo Alto, CA 94301.</p>
           <p className="footer-p">
-            Physical address, if available will go right here.
+            <a
+              href="#0"
+              target="_blank"
+              className="contact-link"
+              rel="noopener noreferrer"
+            >
+              info@blackinai.org
+            </a>
           </p>
-          <p className="footer-p">abc@blackinai.org</p>
+
           <span>
             <span style={{ marginRight: "24px" }}>
               {" "}

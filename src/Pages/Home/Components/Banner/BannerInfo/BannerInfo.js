@@ -1,6 +1,6 @@
 import React from "react";
 import "./BannerInfo.scss";
-import userImage from "../../../../../assets/img/Pix3.png";
+import userImage from "../../../../../assets/img/timnit_gebru.jpg";
 
 const BannerInfo = () => {
   return (

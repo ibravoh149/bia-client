@@ -78,11 +78,15 @@
 }
 
 .user-image{
-  height: 152px;
+  height: 152px !important;
   width: 152px;
   border-radius: 100%;
   & img{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 100%;
   }
 }
 
