@@ -17,6 +17,7 @@ const TestimonialItem = (props) => {
     goToStep,
     totalSteps,
     image,
+    role,
   } = props;
 
   const _onNextClick = () => {
@@ -37,7 +38,7 @@ const TestimonialItem = (props) => {
       <div className="testimonial-container__content-right">
         <p>{story}</p>
         <h3>{name}</h3>
-        {/* <span>AI Researcher, University of Ibadan, Nigeria</span> */}
+        <span>{role}</span>
         <span style={{ marginTop: "44px", cursor: "pointer" }}>
           <IoIosArrowRoundBack size={25} onClick={_onPreviousClick} />
           <IoIosArrowRoundForward
@@ -65,17 +66,20 @@ const Testimonial = () => {
         name="Keita Broadwater"
         story="I got my current job through the Black in AI forum. I would like to give back to the community that has helped me."
         image={image1}
+        role="Head of Machine Learning at Stealth Startup"
       />
       <TestimonialItem
         name="Krystal Maughan"
         story="This community is the closest thing to a family that I’ve found in
             this field."
         image={image2}
+        role="PhD Candidate University of Vermont"
       />
       <TestimonialItem
         name="Ramon Vilarino"
         story="I found a mentor to help me work on my paper. Black in AI is simply amazing. It’s the nicest part of being in STEM."
         image={image3}
+        role="Data Scientist at Experian Data Labs"
       />
     </StepWizard>
   );

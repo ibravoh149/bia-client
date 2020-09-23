@@ -50,8 +50,8 @@ const Sections = () => {
       <SectionContainer>
         <ImageContent image={image3} />
         <TextContent
-          heading="A sentence that sums up what the programs are about."
-          paragraph="It has been placed here solely to demonstrate the look and feel of finished, typeset text. Only for show. He who searches for meaning here will be sorely disappointed."
+          heading="A global network of partners"
+          paragraph="Partners play a key role in accelerating our mission and impact through making our workshop feasible and sustaining our community"
           buttonText="LEARN MORE"
           // containerClass="ml-20"
         />
