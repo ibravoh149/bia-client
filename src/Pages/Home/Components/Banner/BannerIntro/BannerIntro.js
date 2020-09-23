@@ -9,12 +9,13 @@ const BannerIntro = () => {
     <div className="banner-intro-container">
       <div className="banner-intro-container__intro">
         <h2>
-          A short leading intro <br /> sentence about you.
+          Increasing the presence of black people in the field of artificial
+          intelligence.
         </h2>
         <p>
-          It has been placed here solely to demonstrate the look and feel of
-          finished, typeset text and its only for show so she who searches for
-          meaning here will be sorely disappointed.
+          Black in AI increases the presence and inclusion of Black people in
+          the field of AI by creating space for sharing ideas, fostering
+          collaborations, mentorship and advocacy.
         </p>
         <div className="banner-intro-container__intro--btn-contaier">
           <button className="intro-btn btn1">BECOME A MEMBER</button>

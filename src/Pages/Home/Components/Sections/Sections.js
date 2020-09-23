@@ -29,8 +29,8 @@ const Sections = () => {
       <SectionContainer>
         <ImageContent image={image1} />
         <TextContent
-          heading="A sentence that sums up what the programs are about."
-          paragraph="It has been placed here solely to demonstrate the look and feel of finished, typeset text. Only for show. He who searches for meaning here will be sorely disappointed."
+          heading="Fostering an including, end-to-end ecosystem."
+          paragraph="Our initiatives include an academic positions mentorship program, events at various conferences related to AI, advocacy, and community building (through our online forums)."
           buttonText="SEE OUR PROGRAMS"
           // containerClass="ml-20"
         />
@@ -38,8 +38,9 @@ const Sections = () => {
 
       <SectionContainer>
         <TextContent
-          heading="A sentence that sums up what the programs are about."
-          paragraph="It has been placed here solely to demonstrate the look and feel of finished, typeset text. Only for show. He who searches for meaning here will be sorely disappointed."
+          heading="A vibrant online community."
+          paragraph="
+          We use the Facebook group for social discussions related to AI or being a Black researcher. We use the forum to aggregate scholarships, fellowships, internship and job opportunities, summer schools, or research related discussions."
           buttonText="JOIN US"
           // containerClass="mr-20"
         />

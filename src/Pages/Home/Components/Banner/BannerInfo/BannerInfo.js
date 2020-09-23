@@ -5,7 +5,9 @@ import userImage from "../../../../../assets/img/Pix3.png";
 const BannerInfo = () => {
   return (
     <div className="banner-info-container">
-      <h1>We’re in a diversity crisis.</h1>
+      <h1>
+        Removing barriers to the sustained existence of black ai innovators.
+      </h1>
       <div className="banner-info-container__info">
         <div className="banner-info-container__info--left">
           <p>

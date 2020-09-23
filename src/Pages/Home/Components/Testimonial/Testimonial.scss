@@ -4,7 +4,6 @@
   background: #E8F6FB;
   // margin: 0 auto;
   // width: 80%;
-  margin: 0 140px;
   @media only screen and(max-width:992px){
     margin: 0 calc(100vw -  100% - 20px);
   }
@@ -62,5 +61,36 @@
       color: #1F2421;
       margin-top: 20px;
     }
+  }
+}
+
+.testimonial-container-wizard{
+  background: #E8F6FB;
+  margin: 0 140px;
+  @media only screen and(max-width:992px){
+    margin: 0 calc(100vw -  100% - 20px);
+  }
+  // @media only screen and(max-width:768px){
+  //   flex-direction: column;
+  //   align-items: center;
+  //   padding: 48px 100px;
+  // }
+
+  @media only screen and(max-width:600px){
+    // padding: 48px 10px;
+    width: 100%;
+  }
+
+}
+
+.testimonial-image{
+  width: 130px !important;
+  height: 130px !important;
+  & img{
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 100%;
+    height: 130px;
   }
 }

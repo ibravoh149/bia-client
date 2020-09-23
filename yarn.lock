@@ -9132,6 +9132,11 @@ react-sidebar@^3.0.2:
     "@babel/runtime" ">=7.0.0-beta.56"
     prop-types "^15.6.2"
 
+react-step-wizard@^5.3.4:
+  version "5.3.4"
+  resolved "https://registry.yarnpkg.com/react-step-wizard/-/react-step-wizard-5.3.4.tgz#44f0c6781090a103a4d13497908dd9fd60e28dab"
+  integrity sha512-W4FNBjSA1Am5f9t+BWgzUI9xwsXqt9utz7eFb9lNepJm7jEKVZnP/XofTgGb5+HWvwUU3cqU23togTAQGAv1jw==
+
 react-tooltip@^4.2.7:
   version "4.2.10"
   resolved "https://registry.yarnpkg.com/react-tooltip/-/react-tooltip-4.2.10.tgz#ed1a1acd388940c96f4b6309f4fd4dcce5e01bdc"
