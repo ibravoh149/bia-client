@@ -20,8 +20,6 @@ const TestimonialItem = (props) => {
   } = props;
 
   const _onNextClick = () => {
-    console.log(currentStep);
-    console.log(lastStep);
     if (currentStep === totalSteps) return goToStep(1);
     return nextStep();
   };
