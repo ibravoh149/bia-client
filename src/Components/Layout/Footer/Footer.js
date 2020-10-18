@@ -2,6 +2,7 @@ import React from "react";
 import "./Footer.scss";
 import { IoLogoTwitter } from "react-icons/io";
 import { FaFacebook } from "react-icons/fa";
+import { Link, useHistory, useLocation } from "react-router-dom";
 
 const FooterColumn = ({ title, children, titleSize }) => {
   return (
@@ -15,6 +16,11 @@ const FooterColumn = ({ title, children, titleSize }) => {
 };
 
 const Footer = () => {
+  const location = useLocation();
+  // const history = useHistory();
+  const activePath = location.pathname;
+  const isActivePath = (path) =>
+    activePath.toLocaleLowerCase().includes(path.toLocaleLowerCase());
   return (
     <footer className="footer-container">
       <section className="footer-container__top">
@@ -40,21 +46,54 @@ const Footer = () => {
           </p>
 
           <span>
-            <span style={{ marginRight: "24px" }}>
-              {" "}
+            <span
+              style={{ marginRight: "24px", cursor: "pointer" }}
+              onClick={() => window.open("https://www.facebook.com/blackinai")}
+            >
               <FaFacebook size={25} />
             </span>
-            <span>
+            <span
+              style={{ cursor: "pointer" }}
+              onClick={() => window.open("https://twitter.com/black_in_ai")}
+            >
               <IoLogoTwitter size={25} />
             </span>
           </span>
         </FooterColumn>
         <FooterColumn title="LINKS">
           <ul className="footer-link-list">
-            <li>About us</li>
-            <li>Programs</li>
-            <li>Mentorship</li>
-            <li>Partnership</li>
+            <li>
+              <Link
+                className={isActivePath("/about") ? "active-link" : ""}
+                to="/about"
+              >
+                About us
+              </Link>
+            </li>
+            <li>
+              <Link
+                className={isActivePath("/programs") ? "active-link" : ""}
+                to="/programs"
+              >
+                Programs
+              </Link>
+            </li>
+            <li>
+              <Link
+                className={isActivePath("/membership") ? "active-link" : ""}
+                to="/membership"
+              >
+                Membership
+              </Link>
+            </li>
+            <li>
+              <Link
+                className={isActivePath("/partnership") ? "active-link" : ""}
+                to="/partnership"
+              >
+                Partnership
+              </Link>
+            </li>
           </ul>
         </FooterColumn>
         <FooterColumn title="GET UPDATES">
@@ -72,6 +111,7 @@ const Footer = () => {
         </FooterColumn>
       </section>
       <section className="footer-container__bottom"></section>
+      <p className="copy-right">© 2020 Black in AI</p>
     </footer>
   );
 };

@@ -1,0 +1,29 @@
+.info-list-container{
+  margin-top: 80px;
+  display: flex;
+  // flex-wrap: wrap;
+  justify-content: space-between;
+  @media screen and (max-width: 698px) {
+    flex-direction: column;
+   }
+  &__item{
+    flex:25%;
+    // max-width: 25%;
+    // @media screen and (max-width: 698px) {
+    //   width: 100%;
+    //  }
+    & h3{
+      font-style: normal;
+      font-weight: bold;
+      font-size: 28px;
+      line-height: 150%;
+      color: #1F2421;
+    }
+    & p{
+      font-family: Overpass;
+      font-size: 16px;
+      line-height: 180%;
+      color: #4C504D;
+    }
+  }
+}

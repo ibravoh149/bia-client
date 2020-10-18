@@ -1,0 +1,162 @@
+.about-quick-info{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  font-size: 1.5vw;
+  line-height: 180%;
+  color: #1F2421;
+  @media only screen and(max-width:809px){
+    // font-size: 30px;
+    font-size: 3.5vw;
+    padding: 0px 10px;
+  }
+}
+
+.quick-info{
+  // padding: 0px 140px;
+  width: 80%;
+  margin: 0 auto;
+  @media only screen and(max-width:600px){
+    width: 100%;
+    padding: 0px 10px;
+
+  }
+}
+
+.about-gallery{
+  // max-height: 420px;
+  margin-top: 120px;
+}
+
+.about-gallery-row {
+  display: flex;
+  flex-wrap: wrap;
+  // padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.about-gallery-column {
+  // flex: 25%;
+  flex:1;
+  // max-width: 25%;
+  padding: 0 4px;
+}
+
+.about-gallery-column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two about-gallery-column-layout instead of four about-gallery-columns */
+@media screen and (max-width: 800px) {
+  .about-gallery-column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two about-gallery-columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .about-gallery-column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.middle-content{
+  background-color: #E8F6FB;
+  padding-top: 80px;
+  margin-top: 140px;
+  padding-bottom: 120px;
+  &__top-container{
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: 698px) {
+     flex-direction: column;
+    }
+    // flex-direction: wrap !important;
+    & h1{
+      font-style: normal;
+      font-weight: bold;
+      font-size: 40px;
+      line-height: 140%;
+      color: #007299;
+      flex:1;
+    }
+
+    &--left{
+      flex:1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-content: space-between;
+      & > p{
+      font-family: Overpass;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 180%;
+      color: #4C504D;
+
+      }
+
+      & > h3{
+      font-style: normal;
+      font-weight: bold;
+      font-size: 28px;
+      line-height: 150%;
+      color: #1F2421;
+      }
+    }
+
+  }
+}
+
+.about-getting-started{
+  background: #007299;
+  text-align: center;
+  padding: 80px 320px;
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (max-width: 992px) {
+   padding: 80px 200px;
+  }
+
+  @media screen and (max-width: 730px) {
+    padding: 80px 100px;
+   }
+
+   @media screen and (max-width: 530px) {
+    padding: 80px 10px;
+   }
+
+   &__btns{
+     display: flex;
+     align-self: center;
+     @media screen and (max-width: 530px) {
+        flex-direction: column;
+     }
+   }
+ 
+  & h3{
+    font-style: normal;
+      font-weight: bold;
+      font-size: 40px;
+      line-height: 120%;
+      text-align: center;
+      color: #FFFFFF;
+
+  }
+  & p {
+    font-family: Overpass;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 180%;
+    text-align: center;
+    color: #C5EBF9;
+  }
+}

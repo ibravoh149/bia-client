@@ -1,6 +1,6 @@
 .banner-intro-container{
   display: flex;
-  padding: 140px;
+  padding: 0px 140px 140px 140px;
   background-color: white;
   justify-content: space-between;
 
@@ -85,10 +85,9 @@
   }
 
   @media only screen and(max-width:809px){
-    flex-direction: column;
-    // align-self: center;
-    padding: 50px 20px;
-
+      flex-direction: column;
+      // align-self: center;
+      padding: 50px 20px;
     }
 }
 
@@ -105,9 +104,9 @@
   letter-spacing: 0.05em;
   color: white;
   box-shadow: none;
+  text-align: center;
   &:focus{
     outline: none;
-
   }
   &:active{
     outline: none;
@@ -133,4 +132,9 @@
 .btn3{
   background: #F18F01;
   border-color: #F18F01;
+}
+.btn-white{
+  background: #ffffff;
+  border-color: #ffffff;
+  text-align: center;
 }

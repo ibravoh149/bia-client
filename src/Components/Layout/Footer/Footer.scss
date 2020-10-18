@@ -2,7 +2,7 @@
   background: #1F2421;
   color: white;
   padding: 80px 140px;
-  margin-top: 120px;
+  // margin-top: 120px;
   @media only screen and(max-width:809px){
     padding: 80px 20px;
     }
@@ -63,6 +63,22 @@
       //   // padding: 2px 5px;
       //   border-radius: 4px;
       // }
+
+      a{
+        text-decoration: none;
+        font-weight: 600;
+        font-family: Overpass;
+        line-height: 21px;
+        color: rgba(255, 255, 255, 0.8);
+        // &:active{
+        //    font-weight: 600;
+        //    color: rgba(0, 114, 153, 0.7) !important;
+        // }
+        &:hover{
+          // color: rgba(0, 114, 153, 0.7);
+          font-weight: bolder;
+        }
+      }
   }
 }
 .footer-form-container{
@@ -94,4 +110,12 @@
   &:hover{
     color: rgba(255, 255, 255, 0.8);
   }
+}
+
+.copy-right{
+  margin-top: 116px;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Overpass;
+  font-size: 16px;
+  line-height: 180%;
 }
