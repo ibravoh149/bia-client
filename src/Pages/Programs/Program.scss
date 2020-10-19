@@ -1,0 +1,82 @@
+.program-quick-info{
+  & h4{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 120%;
+    color: #1F2421;
+  }
+  & p{
+    font-family: Overpass;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 180%;
+      color: #4C504D;
+  }
+}
+
+.program-middle-content{
+  background: #007299;
+  padding-top: 80px;
+  margin-top: 140px;
+  padding-bottom: 120px;
+}
+
+.program-conference-works{
+  &__heading{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 120%;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+  }
+  &__left-content{
+    & p{
+      font-family: Overpass;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 180%;
+      color: #C5EBF9;
+    }
+  }
+}
+
+.conference-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  & h3{
+    font-family: Overpass;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+    color: #FFFFFF;
+  }
+  & span{
+    font-family: Overpass;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 180%;
+    color: #C5EBF9;
+  }
+}
+
+.btn4{
+  background:  #007299;
+  border-color: white;
+  color: white !important;
+}
+
+.hr-white{
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+// .program-list-c{
+  
+// }
