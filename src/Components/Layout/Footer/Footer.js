@@ -2,7 +2,7 @@ import React from "react";
 import "./Footer.scss";
 import { IoLogoTwitter } from "react-icons/io";
 import { FaFacebook } from "react-icons/fa";
-import { Link, useHistory, useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const FooterColumn = ({ title, children, titleSize }) => {
   return (
