@@ -8,6 +8,7 @@ import {
 import AboutPage from "../Pages/About/About";
 import HomePage from "../Pages/Home/Home";
 import MembershipPage from "../Pages/Membership/MemberShip";
+import PartnershipPage from "../Pages/Partnership/Partnership";
 import AcademicProgram from "../Pages/ProgramDetails/AcademicProgram/AcademicProgram";
 import ProgramPage from "../Pages/Programs/Program";
 
@@ -20,6 +21,7 @@ function Routes() {
           <Route component={HomePage} path="/home" />
           <Route component={AboutPage} path="/about" />
           <Route component={MembershipPage} path="/membership" />
+          <Route component={PartnershipPage} path="/partnership" />
           <Route component={ProgramPage} path="/programs" exact />
           <Route
             component={AcademicProgram}

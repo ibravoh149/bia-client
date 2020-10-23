@@ -1,11 +1,9 @@
-import React, { useEffect } from "react";
-import { Row, Col } from "reactstrap";
+import React from "react";
 import "./AcademicProgram.scss";
 import "../ProgramDetails.scss";
 import Layout from "../../../Components/Layout";
 import image10 from "../../../assets/img/Image10.png";
 import PaddedSection from "../../../Components/Layout/PaddedSection/PaddedSection";
-import { Link } from "react-router-dom";
 import { AccordionContainer } from "../../../Components/Accordion/Accordion";
 
 const AcademicProgram = (props) => {

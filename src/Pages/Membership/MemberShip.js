@@ -1,10 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Row, Col } from "reactstrap";
 import "./Membership.scss";
 import Layout from "../../Components/Layout";
 import image1 from "../../assets/img/Image-1.png";
 import PaddedSection from "../../Components/Layout/PaddedSection/PaddedSection";
-import InfoList from "../../Components/InfoList/InfoList";
 import Testimonial from "../../Components/Testimonial/Testimonial";
 
 const MembershipPage = (props) => {

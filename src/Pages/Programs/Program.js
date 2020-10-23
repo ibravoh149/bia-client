@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Row, Col } from "reactstrap";
 import "./Program.scss";
 import Layout from "../../Components/Layout";
