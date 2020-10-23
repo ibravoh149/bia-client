@@ -1,0 +1,44 @@
+.academic-program-logo{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 72px;
+}
+
+.academic-program-detail{
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  @media only screen and(max-width:806px){
+    width: 75%;
+  }
+
+  @media only screen and(max-width:500px){
+    width: 90%;
+  }
+}
+.academic-program-heading1{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 120%;
+  color: #1F2421;
+}
+
+.academic-program-heading2{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 180%;
+  color: #1F2421;
+}
+.academic-program-p1{
+  font-family: Overpass;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 180%;
+  color: #4C504D;
+}
+.spacer-40px{
+  margin-top: 40px;
+}

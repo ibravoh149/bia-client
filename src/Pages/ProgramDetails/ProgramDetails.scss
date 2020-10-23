@@ -1,0 +1,14 @@
+.p-link{
+    color: #007299;
+    text-decoration: none;
+    &:hover{
+      text-decoration: none;
+      color: #007299;
+      // filter: opacity(120%);
+      font-weight: bold;
+    }
+}
+
+.bold-600{
+  font-weight: 600;
+}

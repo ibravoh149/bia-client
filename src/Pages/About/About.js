@@ -6,13 +6,10 @@ import image3 from "../../assets/img/Image-3.png";
 import image4 from "../../assets/img/Image-4.png";
 import image5 from "../../assets/img/Image-5.png";
 import PaddedSection from "../../Components/Layout/PaddedSection/PaddedSection";
-import InfoList from "./Components/InfoList/InfoList";
+import InfoList from "../../Components/InfoList/InfoList";
 import Ourteam from "./Components/OurTeam/Ourteam";
 
 const AboutPage = (props) => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
   return (
     <Layout {...props}>
       <div className="quick-info">
@@ -69,7 +66,31 @@ const AboutPage = (props) => {
             </div>
           </div>
           <hr />
-          <InfoList />
+
+          <InfoList
+            content={[
+              {
+                title: "2017",
+                paragragh:
+                  "BAI was founded in 2017 to challenge the status quo.",
+              },
+              {
+                title: "3000",
+                paragragh:
+                  "We’ve grown from a small facebook group to a global movement comprising 3000 community members & allies who believe that more black people should shape the direction of the field of AI.",
+              },
+              {
+                title: "10+",
+                paragragh:
+                  "Number of workshops held or some other metric that shows how far we’ve come.",
+              },
+              {
+                title: "40x",
+                paragragh:
+                  "We have increased the number of Black people participating in major AI conferences globally by orders of magnitude through advocacy, financial aid and our workshop.",
+              },
+            ]}
+          />
         </PaddedSection>
       </div>
 

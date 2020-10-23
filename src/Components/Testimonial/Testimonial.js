@@ -2,9 +2,9 @@ import React from "react";
 import "./Testimonial.scss";
 import { IoIosArrowRoundBack, IoIosArrowRoundForward } from "react-icons/io";
 import StepWizard from "react-step-wizard";
-import image1 from "../../../../assets/img/keita_broadwater.jpeg";
-import image2 from "../../../../assets/img/krystal_maughan_bai.png";
-import image3 from "../../../../assets/img/ramon_vilarino.jpg";
+import image1 from "../../assets/img/keita_broadwater.jpeg";
+import image2 from "../../assets/img/krystal_maughan_bai.png";
+import image3 from "../../assets/img/ramon_vilarino.jpg";
 
 const TestimonialItem = (props) => {
   const {
