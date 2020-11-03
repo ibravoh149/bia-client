@@ -68,11 +68,10 @@
     font-family: Overpass;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 180%;
     color: #4C504D;
-    margin-left: -20px;
-
+    margin-left: 1.5rem;
     }
 
     & > h3{
@@ -117,14 +116,10 @@
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-// .partnership-list-c{
-  
-// }
-
 .member-figures{
   display: flex;
   flex-wrap: wrap;
-  margin-top: 80px;
+  margin-top: 8rem;
   justify-content: space-between;
   & * > p{
     font-family: Overpass;
@@ -138,14 +133,14 @@
     & * > h3{
     font-style: normal;
     font-weight: bold;
-    font-size: 28px;
+    font-size: 2.8rem;
     line-height: 150%;
     color: #ffffff;
     }
 }
 
 .tt-container{
-  margin:120px 0px
+  margin:12rem 0px
 }
 
 .partner-with-us{

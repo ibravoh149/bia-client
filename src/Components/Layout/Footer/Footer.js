@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.scss";
-import { IoLogoTwitter } from "react-icons/io";
+import { IoLogoTwitter, IoLogoInstagram, IoLogoLinkedin } from "react-icons/io";
 import { FaFacebook } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
 
@@ -17,7 +17,6 @@ const FooterColumn = ({ title, children, titleSize }) => {
 
 const Footer = () => {
   const location = useLocation();
-  // const history = useHistory();
   const activePath = location.pathname;
   const isActivePath = (path) =>
     activePath.toLocaleLowerCase().includes(path.toLocaleLowerCase());
@@ -45,12 +44,28 @@ const Footer = () => {
             </a>
           </p>
 
-          <span>
+          <span style={{ display: "flex" }}>
             <span
-              style={{ marginRight: "24px", cursor: "pointer" }}
+              style={{ marginRight: "2rem", cursor: "pointer" }}
               onClick={() => window.open("https://www.facebook.com/blackinai")}
             >
               <FaFacebook size={25} />
+            </span>
+            <span
+              style={{ marginRight: "2rem", cursor: "pointer" }}
+              onClick={() =>
+                window.open("https://www.instagram.com/blackinai/")
+              }
+            >
+              <IoLogoInstagram size={25} />
+            </span>
+            <span
+              style={{ marginRight: "2rem", cursor: "pointer" }}
+              onClick={() =>
+                window.open("https://www.linkedin.com/company/blackinai/")
+              }
+            >
+              <IoLogoLinkedin size={25} />
             </span>
             <span
               style={{ cursor: "pointer" }}

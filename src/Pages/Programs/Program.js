@@ -63,7 +63,14 @@ const ProgramPage = (props) => {
                 <ConferenceItem>
                   <div className="conference-item">
                     <h3>BAI 2020</h3>
-                    <button className="intro-btn btn2">ATTEND</button>
+                    <button
+                      className="intro-btn btn2"
+                      onClick={() =>
+                        window.open("https://blackinai.github.io/")
+                      }
+                    >
+                      ATTEND
+                    </button>
                   </div>
                 </ConferenceItem>
 

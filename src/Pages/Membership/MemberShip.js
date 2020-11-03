@@ -48,7 +48,16 @@ const MembershipPage = (props) => {
                   Be part of our network.
                 </h2>
 
-                <button className="intro-btn btn2">BECOME A MEMBER</button>
+                <button
+                  className="intro-btn btn2"
+                  onClick={() =>
+                    window.open(
+                      "https://docs.google.com/forms/d/1pv34QhQE74gBnDu2xTdLmMNnWykY5tN2wihWIh7mwrQ/viewform?edit_requested=true"
+                    )
+                  }
+                >
+                  BECOME A MEMBER
+                </button>
                 <br />
                 <button className="intro-btn btn-white">
                   MEMBERSHIP DIRECTORY
@@ -128,7 +137,16 @@ const MembershipPage = (props) => {
             <h1>Join us today</h1>
 
             <div style={{ display: "flex", flexWrap: "wrap" }}>
-              <button className="intro-btn btn1">BECOME A MEMBER</button>
+              <button
+                className="intro-btn btn1"
+                onClick={() =>
+                  window.open(
+                    "https://docs.google.com/forms/d/1pv34QhQE74gBnDu2xTdLmMNnWykY5tN2wihWIh7mwrQ/viewform?edit_requested=true"
+                  )
+                }
+              >
+                BECOME A MEMBER
+              </button>
               <br />
               <button className="intro-btn btn2">MEMBERSHIP DIRECTORY</button>
             </div>

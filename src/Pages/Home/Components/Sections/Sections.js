@@ -5,12 +5,23 @@ import image1 from "../../../../assets/img/Image.png";
 import image2 from "../../../../assets/img/Image-1.png";
 import image3 from "../../../../assets/img/Image-2.png";
 
-const TextContent = ({ buttonText, heading, paragraph, containerClass }) => {
+const TextContent = ({
+  buttonText,
+  heading,
+  paragraph,
+  containerClass,
+  buttonLink,
+}) => {
   return (
     <div className={`section-content ${containerClass}`}>
       <h2>{heading}</h2>
       <p>{paragraph}</p>
-      <button className="intro-btn btn1">{buttonText}</button>
+      <button
+        className="intro-btn btn1"
+        onClick={buttonLink ? () => window.open(buttonLink) : () => {}}
+      >
+        {buttonText}
+      </button>
     </div>
   );
 };
@@ -42,6 +53,7 @@ const Sections = () => {
           paragraph="
           We use the Facebook group for social discussions related to AI or being a Black researcher. We use the forum to aggregate scholarships, fellowships, internship and job opportunities, summer schools, or research related discussions."
           buttonText="JOIN US"
+          buttonLink="https://docs.google.com/forms/d/1pv34QhQE74gBnDu2xTdLmMNnWykY5tN2wihWIh7mwrQ/viewform?edit_requested=true"
           // containerClass="mr-20"
         />
         <ImageContent image={image2} />

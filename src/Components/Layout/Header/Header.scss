@@ -2,9 +2,9 @@
   display: flex;
   justify-content: space-around;
   background-color: white;
-  padding: 10px 0;
+  padding: 1rem 0;
   align-items: center;
-  margin-bottom: 120px;
+  margin-bottom: 12rem;
   &__logo-container{
     & > ul{
       list-style-type: none;
@@ -17,10 +17,11 @@
 
       }
       .logo-text{
-        margin-left: 12.7px;
+        margin-left: 1.27rem;
         align-self: center;
         color: #1F2421;
         font-weight: 600;
+        font-size: 1.4rem;
       }
       .logo-icon{
         // height: 40px;
@@ -43,11 +44,11 @@
       justify-content: space-between;
       align-items: center;
       & li {
-        margin-left: 24px;
+        margin-left: 2.4rem;
         font-family: Overpass;
         font-weight: 600;
-        font-size: 14px;
-        line-height: 21px;
+        font-size: 1.4rem;
+        line-height: 2.1rem;
         letter-spacing: 0.05em;
         // padding: 5px 10px;
         color: #1F2421;
@@ -61,7 +62,7 @@
           text-decoration: none;
           font-weight: 600;
           font-family: Overpass;
-          line-height: 21px;
+          line-height: 2.1rem;
           // &:active{
           //    font-weight: 600;
           //    color: rgba(0, 114, 153, 0.7) !important;
@@ -72,9 +73,9 @@
         }
       }
       .nav-list-donate-btn{
-        padding: 5px 24px;
+        padding: 0.5rem 2.4rem;
         background: #F18F01;
-        border-radius: 50px;
+        border-radius: 5rem;
         color: white;
         &:hover{
           filter: brightness(90%);
@@ -97,7 +98,7 @@
   align-items: center;
   display: none;
   cursor: pointer;
-  margin-top: -25px;
+  margin-top: -2.5rem;
 
   @media only screen and (max-width:809px){
     display: flex;

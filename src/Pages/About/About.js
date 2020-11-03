@@ -109,7 +109,16 @@ const AboutPage = (props) => {
           <button className="intro-btn btn2" style={{ marginRight: "5px" }}>
             HOW YOU CAN HELPS
           </button>
-          <button className="intro-btn btn-white">JOIN US</button>
+          <button
+            className="intro-btn btn-white"
+            onClick={() =>
+              window.open(
+                "https://docs.google.com/forms/d/1pv34QhQE74gBnDu2xTdLmMNnWykY5tN2wihWIh7mwrQ/viewform?edit_requested=true"
+              )
+            }
+          >
+            JOIN US
+          </button>
         </div>
       </div>
     </Layout>

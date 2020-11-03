@@ -18,7 +18,16 @@ const BannerIntro = () => {
           collaborations, mentorship and advocacy.
         </p>
         <div className="banner-intro-container__intro--btn-contaier">
-          <button className="intro-btn btn1">BECOME A MEMBER</button>
+          <button
+            className="intro-btn btn1"
+            onClick={() =>
+              window.open(
+                "https://docs.google.com/forms/d/1pv34QhQE74gBnDu2xTdLmMNnWykY5tN2wihWIh7mwrQ/viewform?edit_requested=true"
+              )
+            }
+          >
+            BECOME A MEMBER
+          </button>
           <button className="intro-btn btn2">PARTNER WITH US</button>
         </div>
       </div>

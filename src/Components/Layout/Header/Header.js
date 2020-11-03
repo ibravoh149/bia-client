@@ -35,23 +35,37 @@ const Header = () => {
           <ul>
             <li>
               <Link
-                className={isActivePath("/about") ? "active-link" : ""}
+                className={`${isActivePath("/about") ? "active-link" : ""}`}
                 to="/about"
               >
                 ABOUT
               </Link>
             </li>
-            <li>
+            <li className="dropdown">
               <Link
-                className={isActivePath("/programs") ? "active-link" : ""}
+                className={`dropdown-toggle ${
+                  isActivePath("/programs") ? "active-link" : ""
+                }`}
                 to="/programs"
+                role="button"
+                data-toggle="dropdown"
+                id="navbarDropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
               >
                 PROGRAMS
               </Link>
+              {/* <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a className="dropdown-item">Action</a>
+                <a className="dropdown-item">Another action</a>
+                <a className="dropdown-item">Something else here</a>
+              </div> */}
             </li>
             <li>
               <Link
-                className={isActivePath("/membership") ? "active-link" : ""}
+                className={`${
+                  isActivePath("/membership") ? "active-link" : ""
+                }`}
                 to="/membership"
               >
                 MEMBERSHIP
@@ -59,7 +73,9 @@ const Header = () => {
             </li>
             <li>
               <Link
-                className={isActivePath("/partnership") ? "active-link" : ""}
+                className={`${
+                  isActivePath("/partnership") ? "active-link" : ""
+                }`}
                 to="/partnership"
               >
                 PARTNERSHIP
