@@ -46,16 +46,14 @@ const PartnershipPage = (props) => {
     element,
     pinterest,
     salesforce,
-    rockerfeller,
     ibm,
     etsy,
-    macauthur,
     nvidia,
     deepminded,
     facebook,
   ];
 
-  const institutionalPartnersIcon = [
+  const academicPartnersIcon = [
     northwestern,
     berkeley,
     harvard,
@@ -69,6 +67,8 @@ const PartnershipPage = (props) => {
     mcgill,
     duke_logo,
   ];
+
+  const foundationPartners = [rockerfeller, macauthur];
   const _breakInChunck = (list, chunkSize = 4) => {
     let listChunk = [];
     for (let i = 0; i < list.length; i += chunkSize) {
@@ -164,7 +164,7 @@ const PartnershipPage = (props) => {
       <PaddedSection>
         <div className="current-partners">
           <h1>Current partners</h1>
-          <h3>Corporate partners</h3>
+          <h3>Corporations</h3>
           <br />
 
           {_breakInChunck(parnerIcons, 6).map((chunk) => {
@@ -186,11 +186,34 @@ const PartnershipPage = (props) => {
             );
           })}
 
-          <h3>Institutional partners</h3>
+          <h3>Academic Institutions</h3>
           <br />
           <br />
 
-          {_breakInChunck(institutionalPartnersIcon, 6).map((chunk) => {
+          {_breakInChunck(academicPartnersIcon, 6).map((chunk) => {
+            return (
+              <div className="parner-gallery">
+                {chunk.map((i) => {
+                  return (
+                    <div style={{ alignSelf: "center" }}>
+                      <img
+                        src={i}
+                        alt="parner icon"
+                        className="img-fluid"
+                        style={{ margin: "5px" }}
+                      />
+                    </div>
+                  );
+                })}
+              </div>
+            );
+          })}
+
+          <h3>Foundations</h3>
+          <br />
+          <br />
+
+          {_breakInChunck(foundationPartners, 6).map((chunk) => {
             return (
               <div className="parner-gallery">
                 {chunk.map((i) => {
