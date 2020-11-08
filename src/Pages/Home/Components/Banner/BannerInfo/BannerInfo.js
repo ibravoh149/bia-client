@@ -30,7 +30,7 @@ const BannerInfo = () => {
             <img src={userImage} alt="user profile" />
           </div>
           <h3>Timnit Gebru</h3>
-          <span>Co-Founder, BAI</span>
+          <span>Co-founder, Black in AI</span>
         </div>
       </div>
     </div>

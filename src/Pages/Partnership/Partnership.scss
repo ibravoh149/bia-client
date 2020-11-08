@@ -200,3 +200,9 @@
     color: #4C504D;
   }
 }
+
+.img-enlarged{
+    height: 75px !important;
+    object-fit: cover;
+    object-position: 50% 50%;
+}

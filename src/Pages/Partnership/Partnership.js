@@ -164,6 +164,30 @@ const PartnershipPage = (props) => {
       <PaddedSection>
         <div className="current-partners">
           <h1>Current partners</h1>
+
+          <h3>Foundations</h3>
+          <br />
+          <br />
+
+          {_breakInChunck(foundationPartners, 6).map((chunk) => {
+            return (
+              <div className="parner-gallery">
+                {chunk.map((i) => {
+                  return (
+                    <div style={{ alignSelf: "center" }}>
+                      <img
+                        src={i}
+                        alt="parner icon"
+                        className="img-fluid img-enlarged"
+                        style={{ margin: "5px" }}
+                      />
+                    </div>
+                  );
+                })}
+              </div>
+            );
+          })}
+
           <h3>Corporations</h3>
           <br />
 
@@ -191,29 +215,6 @@ const PartnershipPage = (props) => {
           <br />
 
           {_breakInChunck(academicPartnersIcon, 6).map((chunk) => {
-            return (
-              <div className="parner-gallery">
-                {chunk.map((i) => {
-                  return (
-                    <div style={{ alignSelf: "center" }}>
-                      <img
-                        src={i}
-                        alt="parner icon"
-                        className="img-fluid"
-                        style={{ margin: "5px" }}
-                      />
-                    </div>
-                  );
-                })}
-              </div>
-            );
-          })}
-
-          <h3>Foundations</h3>
-          <br />
-          <br />
-
-          {_breakInChunck(foundationPartners, 6).map((chunk) => {
             return (
               <div className="parner-gallery">
                 {chunk.map((i) => {
