@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./ProgramList.scss";
 
-const ProgramListItem = ({ image, title, paragraph, link }) => {
+const ProgramListItem = ({ image, title, paragraph, link, showLinkButton }) => {
   return (
     <div className="program-list-item">
       <Link to={`/programs/${link}`}>
@@ -11,6 +11,9 @@ const ProgramListItem = ({ image, title, paragraph, link }) => {
         </div>
         <h4>{title}</h4>
         <p>{paragraph}</p>
+        {showLinkButton && (
+          <button className="intro-btn btn1">LEARN MORE</button>
+        )}
       </Link>
     </div>
   );
