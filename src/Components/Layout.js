@@ -9,11 +9,11 @@ const Layout = (props) => {
 
   const { children } = props;
   return (
-    <>
+    <div style={{ position: "relative" }}>
       <Header />
-      <>{children}</>
+      <div style={{ marginTop: "12rem" }}>{children}</div>
       <Footer />
-    </>
+    </div>
   );
 };
 

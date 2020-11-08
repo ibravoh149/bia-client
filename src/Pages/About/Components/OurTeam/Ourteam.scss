@@ -12,25 +12,27 @@
   }
   &__list{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-content: center;
     flex-wrap: wrap;
     width: 100%;
+    margin: 0 auto;
 
     @media screen and (max-width: 749px) {
       align-items: center;
       justify-content: center;
     }
     &--item{
-      width:356px;
+      // width:356px;
       display: flex;
       flex-direction: column;
       margin-top: 84px;
       @media screen and (max-width: 889px) {
-        width:320px;
+        // width:320px;
       }
 
       @media screen and (max-width: 889px) {
-        width:300px;
+        // width:300px;
       }
 
       @media screen and (max-width: 749px) {
@@ -79,4 +81,15 @@
       }
     }
   }
+}
+
+.team-cat-heading{
+  font-family: Overpass;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 180%;
+    text-align: center;
+    color: #4C504D;
+    text-decoration: underline;
 }

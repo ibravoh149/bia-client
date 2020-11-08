@@ -5,6 +5,12 @@
   padding: 1rem 0;
   align-items: center;
   margin-bottom: 12rem;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  top:0;
+  left: 0;
+  right: 0;
   &__logo-container{
     & > ul{
       list-style-type: none;

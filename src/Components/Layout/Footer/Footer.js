@@ -3,6 +3,7 @@ import "./Footer.scss";
 import { IoLogoTwitter, IoLogoInstagram, IoLogoLinkedin } from "react-icons/io";
 import { FaFacebook } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
+import { isActivePath } from "../../../util/helper";
 
 const FooterColumn = ({ title, children, titleSize }) => {
   return (
@@ -18,8 +19,7 @@ const FooterColumn = ({ title, children, titleSize }) => {
 const Footer = () => {
   const location = useLocation();
   const activePath = location.pathname;
-  const isActivePath = (path) =>
-    activePath.toLocaleLowerCase().includes(path.toLocaleLowerCase());
+
   return (
     <footer className="footer-container">
       <section className="footer-container__top">
@@ -79,7 +79,9 @@ const Footer = () => {
           <ul className="footer-link-list">
             <li>
               <Link
-                className={isActivePath("/about") ? "active-link" : ""}
+                className={
+                  isActivePath(activePath, "/about") ? "active-link" : ""
+                }
                 to="/about"
               >
                 About us
@@ -87,7 +89,9 @@ const Footer = () => {
             </li>
             <li>
               <Link
-                className={isActivePath("/programs") ? "active-link" : ""}
+                className={
+                  isActivePath(activePath, "/programs") ? "active-link" : ""
+                }
                 to="/programs"
               >
                 Programs
@@ -95,7 +99,9 @@ const Footer = () => {
             </li>
             <li>
               <Link
-                className={isActivePath("/membership") ? "active-link" : ""}
+                className={
+                  isActivePath(activePath, "/membership") ? "active-link" : ""
+                }
                 to="/membership"
               >
                 Membership
@@ -103,7 +109,9 @@ const Footer = () => {
             </li>
             <li>
               <Link
-                className={isActivePath("/partnership") ? "active-link" : ""}
+                className={
+                  isActivePath(activePath, "/partnership") ? "active-link" : ""
+                }
                 to="/partnership"
               >
                 Partnership

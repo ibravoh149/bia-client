@@ -5,6 +5,7 @@ import { TiThMenuOutline } from "react-icons/ti";
 import Drawer from "../Drawer/Drawer";
 import BackDrop from "../Drawer/BackDrop";
 import { Link, useHistory, useLocation } from "react-router-dom";
+import { isActivePath } from "../../../util/helper";
 
 const Header = () => {
   const [showDrawer, setShowDrawer] = useState(false);
@@ -14,8 +15,7 @@ const Header = () => {
   const location = useLocation();
   const history = useHistory();
   const activePath = location.pathname;
-  const isActivePath = (path) =>
-    activePath.toLocaleLowerCase().includes(path.toLocaleLowerCase());
+
   return (
     <>
       <Drawer show={showDrawer} toggle={toggleDrawer} />
@@ -35,7 +35,9 @@ const Header = () => {
           <ul>
             <li>
               <Link
-                className={`${isActivePath("/about") ? "active-link" : ""}`}
+                className={`${
+                  isActivePath(activePath, "/about") ? "active-link" : ""
+                }`}
                 to="/about"
               >
                 ABOUT
@@ -44,7 +46,7 @@ const Header = () => {
             <li className="dropdown">
               <Link
                 className={`dropdown-toggle ${
-                  isActivePath("/programs") ? "active-link" : ""
+                  isActivePath(activePath, "/programs") ? "active-link" : ""
                 }`}
                 to="/programs"
                 role="button"
@@ -64,7 +66,7 @@ const Header = () => {
             <li>
               <Link
                 className={`${
-                  isActivePath("/membership") ? "active-link" : ""
+                  isActivePath(activePath, "/membership") ? "active-link" : ""
                 }`}
                 to="/membership"
               >
@@ -74,7 +76,7 @@ const Header = () => {
             <li>
               <Link
                 className={`${
-                  isActivePath("/partnership") ? "active-link" : ""
+                  isActivePath(activePath, "/partnership") ? "active-link" : ""
                 }`}
                 to="/partnership"
               >
