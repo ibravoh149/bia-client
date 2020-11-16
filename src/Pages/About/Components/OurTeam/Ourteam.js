@@ -15,6 +15,8 @@ import redietAbebe from "../../../../assets/img/team/rediet_abebe.jpg";
 import rodneySampson from "../../../../assets/img/team/rodney_sampson.jpeg";
 import sanmiKoyejo from "../../../../assets/img/team/sanmi_koyejo.png";
 import timnitGebru from "../../../../assets/img/team/timnit_gebru.jpg";
+import habenGirma from "../../../../assets/img/team/haben_girma.jpg";
+import joyceWilliams from "../../../../assets/img/team/joyce_williams.jpg";
 
 const OurteamItem = ({
   avatar,
@@ -42,12 +44,14 @@ const OurteamItem = ({
       <h4>{name}</h4>
       {/* <span>{designation}</span> */}
       {/* <p>{bio}</p> */}
-      <span
-        style={{ cursor: "pointer" }}
-        onClick={() => window.open(socialMediahandleLink)}
-      >
-        {_mediaType()}
-      </span>
+      {socialMediahandleLink && (
+        <span
+          style={{ cursor: "pointer" }}
+          onClick={() => window.open(socialMediahandleLink)}
+        >
+          {_mediaType()}
+        </span>
+      )}
     </div>
   );
 };
@@ -92,6 +96,12 @@ const Ourteam = () => {
           name="Ayanna Howard"
           socialMediahandleLink="https://www.linkedin.com/in/ayanna-howard"
         />
+
+        <OurteamItem
+          avatar={habenGirma}
+          name="Haben Girma"
+          socialMediahandleLink="https://www.linkedin.com/in/habengirma"
+        />
       </div>
 
       <br />
@@ -131,6 +141,13 @@ const Ourteam = () => {
           name="Devin Guillory"
           socialMediahandleLink="http://www.devinguillory.com/"
           mediaType="web"
+        />
+
+        <OurteamItem
+          avatar={joyceWilliams}
+          name="Joyce Williams"
+          // socialMediahandleLink="http://www.devinguillory.com/"
+          // mediaType="web"
         />
       </div>
 
